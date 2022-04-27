@@ -179,10 +179,10 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz#b520529ec21d8e5945a1851dfd1c32e94e39ff45"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
-"@kilo-lab/web-design.header@^0.0.2":
-  version "0.0.2"
-  resolved "https://node.bit.dev/@kilo-lab/web-design.header/-/@kilo-lab-web-design.header-0.0.2.tgz#3cac5f82cbf16787764da22abb83777eb51c46d2"
-  integrity sha1-PKxfgsvxZ4d2TaIqu4N3frUcRtI=
+"@kilo-lab/web-design.header@^0.0.3":
+  version "0.0.3"
+  resolved "https://node.bit.dev/@kilo-lab/web-design.header/-/@kilo-lab-web-design.header-0.0.3.tgz#2c2de5aad69f2c9b2cdc0c66dc3a7feb61a567a3"
+  integrity sha1-LC3lqtafLJss3Axm3Dp/62GlZ6M=
   dependencies:
     core-js "^3.0.0"
     styled-components "5.3.5"
