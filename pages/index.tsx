@@ -23,7 +23,7 @@ const Home: NextPage = () => {
       <Header color="white" backgroundColor={theme.colors.primary} title="KiloLab NextJS Template" position="fixed" top="0" left={0} right={0} width="100%" />
       <main className={styles.main}>
         <Title color="black" fontSize="70px" margin="30px 0px">
-          Welcome to <a style={{color: theme.colors.primary}} href="https://www.github.com/merveillevaneck/kilolab-next-template">KiloLab's Template</a>
+          Welcome to <a style={{color: theme.colors.primary}} href="https://www.github.com/merveillevaneck/kilolab-next-template">KiloLab&apos;s Template</a>
         </Title>
 
         <p className={styles.description}>
