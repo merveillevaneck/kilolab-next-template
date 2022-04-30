@@ -5,6 +5,7 @@ import { configureStore } from '@reduxjs/toolkit';
 import { Reducers } from './reducers';
 
 import { ThemeState } from '../theme';
+import { SessionState } from './session';
 
 // const persistConfig = {
 //   key: 'root',
@@ -12,8 +13,10 @@ import { ThemeState } from '../theme';
 // };
 
 export * from './submissions';
+export * from './session';
 
 export type RootState = {
+  session: SessionState;
   submissions: number;
   theme: ThemeState;
 };
