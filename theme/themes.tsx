@@ -24,4 +24,4 @@ export const Theme: DefaultTheme = {
 
 export default {
     Theme,
-};
+}

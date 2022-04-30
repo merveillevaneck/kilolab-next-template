@@ -12,9 +12,11 @@ const GlobalStyle = createGlobalStyle<{theme: DefaultTheme}>`
 `;
 
 function MyApp({ Component, pageProps }: AppProps) {
+
+
   return <Provider store={store}>
-    <GlobalStyle />
-    <Component {...pageProps} />
+      <GlobalStyle />
+      <Component {...pageProps} />
   </Provider>
 }
 
