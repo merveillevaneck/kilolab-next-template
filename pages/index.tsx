@@ -130,7 +130,7 @@ const Home: NextPage = () => {
             boxShadow="0px 0px 5px grey"
           >
             <h2>Custom Softare &rarr;</h2>
-            <p>Looking for Custom Software? Visit our home page and tell us what you're looking for!</p>
+            <p>Looking for Custom Software? Visit our home page and tell us what you&apos;re looking for!</p>
           </CardLink>
           <CardLink
             width="250px"
