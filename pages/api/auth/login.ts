@@ -3,7 +3,7 @@ import { connectToDatabase } from '../../../mongodb';
 
 type Data = string;
 
-export default async (
+export const login = async (
   req: NextApiRequest,
   res: NextApiResponse
 ) => {
@@ -18,3 +18,5 @@ export default async (
   }
   res.status(400).json('user does not exist');
 }
+
+export default login;
