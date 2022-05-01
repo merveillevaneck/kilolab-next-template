@@ -72,7 +72,7 @@ export const TitleGraphic: React.FC<TitleGraphicProps> = props => {
 
   return (
     <TitleGraphicContainer {...rest}>
-      <Image src={src} {...imageProps} />
+      <Image alt="title-graphic" src={src} {...imageProps} />
       {typeof title === 'string' && (
         <Title fontSize={32} color="black">{title}</Title>
       )}

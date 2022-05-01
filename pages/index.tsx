@@ -61,6 +61,7 @@ const Home: NextPage = () => {
 
   useEffect(() => {
     login();
+    //@ts-lint ignore
   }, []);
 
   return (
