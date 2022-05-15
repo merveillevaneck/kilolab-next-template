@@ -9,6 +9,7 @@ declare module 'styled-components' {
     bubbleShadow: string;
 
     colors: {
+      header: string;
       primary: string;
       secondary: string;
       text: string;

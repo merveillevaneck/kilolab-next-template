@@ -1,9 +1,10 @@
 import { useEffect, useCallback } from 'react';
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Image from 'next/image'
+import { Text } from '@kilo-lab/web-design.text';
 import { Title } from '@kilo-lab/web-design.title';
 import { Header } from '@kilo-lab/web-design.header';
-import { IoEarth } from 'react-icons/io5';
 import styled from 'styled-components';
 import { Page, TitleGraphic, CardLink, Footer } from '../components';
 import { useTheme } from '../theme';
@@ -38,17 +39,11 @@ const Grid = styled.div`
   margin: 20px 0px;
 `;
 
-const Description = styled.p`
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-`;
-
 const Code = styled.code`
   background: #fafafa;
   border-radius: 5px;
   padding: 0.75rem;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
 `;
@@ -74,20 +69,17 @@ const Home: NextPage = () => {
       <Header
         zIndex={100}
         LeftElement={
-          <IoEarth
-            style={{ marginRight: '10px' }}
-            color="white"
-            size={20}
-          />
+          <Image src="/logo.svg" width="70px" height="70px" alt="kilolab_logo" />
         }
         color="white"
-        backgroundColor={theme.colors.primary}
+        backgroundColor={theme.colors.header}
         title="KiloLab NextJS Template"
         position="fixed"
         top="0"
         left={0}
         right={0}
         width="100%"
+        boxShadow="0px 4px 5px rgba(0, 0, 0, 0.4)"
       />
       <Main>
         <TitleGraphic
@@ -99,7 +91,7 @@ const Home: NextPage = () => {
             height: 700
           }}
           title={
-            <Title marginTop="100px" marginLeft="-150px" color="black" fontSize={90}>
+            <Title textShadow="0px 1px 2px rgba(0, 0, 0, 0.8)" marginTop="100px" marginLeft="-150px" color="black" fontSize={90}>
               Welcome to<br />
               <Link style={{ color: theme.colors.primary }}>
                 KiloLab&apos;s NextJS<br />
@@ -109,10 +101,10 @@ const Home: NextPage = () => {
           }
         />
 
-        <Description>
+        <Text fontSize="1.5rem">
           Get started by editing{' '}
           <Code>pages/index.tsx</Code>
-        </Description>
+        </Text>
 
         <Grid>
           <CardLink
@@ -129,10 +121,9 @@ const Home: NextPage = () => {
               color: theme.colors.secondary
             }}
             boxShadow="0px 0px 5px grey"
-          >
-            <h2>Custom Softare &rarr;</h2>
-            <p>Looking for Custom Software? Visit our home page and tell us what you&apos;re looking for!</p>
-          </CardLink>
+            title="Custom Software"
+            description="Looking for Custom Software? Visit our home page and tell us what you&apos;re looking for!"
+          />
           <CardLink
             width="250px"
             height="200px"
@@ -147,10 +138,9 @@ const Home: NextPage = () => {
               color: theme.colors.secondary
             }}
             boxShadow="0px 0px 5px grey"
-          >
-            <h2>Styled System &rarr;</h2>
-            <p>We build our components using styled system! We know...we like it too. Check out their home page here.</p>
-          </CardLink>
+            title="Styled System"
+            description="We build our components using styled system! We know...we like it too. Check out their home page here."
+          />
         </Grid>
         <Grid>
           <CardLink
@@ -167,10 +157,9 @@ const Home: NextPage = () => {
               color: theme.colors.secondary
             }}
             boxShadow="0px 0px 5px grey"
-          >
-            <h2>Components &rarr;</h2>
-            <p>Want to make your own Components? Visit our component registry and publish using Bit!</p>
-          </CardLink>
+            title="Components"
+            description="Want to make your own Components? Visit our component registry and publish using Bit!"
+          />
         </Grid>
       </Main>
 
@@ -178,14 +167,14 @@ const Home: NextPage = () => {
         background={theme.colors.primary}
         logo={<TitleGraphic
           width="300px"
-          src="/earth_footer.svg"
+          src="/earth_spin_footer.svg"
           imageProps={{
-            src: '/earth_footer.svg',
+            src: '/earth_spin_footer.svg',
             width: 200,
             height: 200,
           }}
           title={
-            <Title color="white" fontSize="30px" marginLeft="-50px">
+            <Title  color="white" fontSize="30px" marginLeft="-50px">
               KiloLab
               <br />
               Pty Ltd
@@ -195,7 +184,7 @@ const Home: NextPage = () => {
         _content={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'stretch', width: '400px', height: '200px'}}
       >
         <div style={{color: 'white'}}>
-          <Title color="white">
+          <Title color={theme.colors.header}>
             Location
           </Title>
           <p style={{fontSize:"14px"}}>
@@ -207,7 +196,7 @@ const Home: NextPage = () => {
           </p>
         </div>
         <div style={{color: 'white'}}>
-          <Title color="white">
+          <Title color={theme.colors.header}>
             Contact Us
           </Title>
           <p>
