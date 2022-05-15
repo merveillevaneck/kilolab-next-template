@@ -186,23 +186,38 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz#b520529ec21d8e5945a1851dfd1c32e94e39ff45"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
-"@kilo-lab/web-design.header@^0.0.3":
-  version "0.0.3"
-  resolved "https://node.bit.dev/@kilo-lab/web-design.header/-/@kilo-lab-web-design.header-0.0.3.tgz#2c2de5aad69f2c9b2cdc0c66dc3a7feb61a567a3"
-  integrity sha1-LC3lqtafLJss3Axm3Dp/62GlZ6M=
+"@kilo-lab/web-design.compositions@0.0.1":
+  version "0.0.1"
+  resolved "https://node.bit.dev/@kilo-lab/web-design.compositions/-/@kilo-lab-web-design.compositions-0.0.1.tgz#9437e4fc97c9b60a9d982c189c8b4d8d84de1841"
+  integrity sha1-lDfk/JfJtgqdmCwYnItNjYTeGEE=
   dependencies:
-    core-js "^3.0.0"
     styled-components "5.3.5"
     styled-system "5.1.5"
 
-"@kilo-lab/web-design.title@^0.0.1":
-  version "0.0.1"
-  resolved "https://node.bit.dev/@kilo-lab/web-design.title/-/@kilo-lab-web-design.title-0.0.1.tgz#523b8fd33c7fea7c74da1232d62aa4e69c464ce0"
-  integrity sha1-UjuP0zx/6nx02hIy1iqk5pxGTOA=
+"@kilo-lab/web-design.header@^0.0.4":
+  version "0.0.4"
+  resolved "https://node.bit.dev/@kilo-lab/web-design.header/-/@kilo-lab-web-design.header-0.0.4.tgz#d8a70aab7c19883390d01200ef94a300e5b2d86f"
+  integrity sha1-2KcKq3wZiDOQ0BIA75SjAOWy2G8=
   dependencies:
+    "@kilo-lab/web-design.compositions" "0.0.1"
+    core-js "^3.0.0"
+
+"@kilo-lab/web-design.text@^0.0.1":
+  version "0.0.1"
+  resolved "https://node.bit.dev/@kilo-lab/web-design.text/-/@kilo-lab-web-design.text-0.0.1.tgz#404c0f385065da6aa3af45f0693947820ec58ad3"
+  integrity sha1-QEwPOFBl2mqjr0XwaTlHgg7FitM=
+  dependencies:
+    "@kilo-lab/web-design.compositions" "0.0.1"
+    core-js "^3.0.0"
+
+"@kilo-lab/web-design.title@^0.0.2":
+  version "0.0.2"
+  resolved "https://node.bit.dev/@kilo-lab/web-design.title/-/@kilo-lab-web-design.title-0.0.2.tgz#415f47031a9bea67d70bb4c372460c92be10418f"
+  integrity sha1-QV9HAxqb6mfXC7TDckYMkr4QQY8=
+  dependencies:
+    "@kilo-lab/web-design.compositions" "0.0.1"
     core-js "^3.0.0"
     styled-components "5.3.5"
-    styled-system "5.1.5"
 
 "@next/env@12.1.5":
   version "12.1.5"

@@ -7,6 +7,7 @@ export const Theme: DefaultTheme = {
   titleSize: 130,
   bubbleShadow: '0px 0px 1px rgba(0, 0, 0, 0.5)',
   colors: {
+    header: "#2F2E41",
     primary: '#6C63FF',
     secondary: '#8EE3C8',
     text: 'rgba(0, 0, 0, 0.7)',
